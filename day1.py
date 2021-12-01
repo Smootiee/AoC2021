@@ -24,4 +24,3 @@ for y in range(0, len(data) - 2):
 
 print("--- Part Two:", inc_count_two, " ---")
 
-#
