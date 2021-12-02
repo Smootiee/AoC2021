@@ -10,12 +10,12 @@ aim = 0
 
 
 for x in data:
-    if x.startswith('forward'):
+    if x[0:-2] == 'forward':
         horiz_pos += int(x[-1])
         aim += (depth * int(x[-1]))
-    elif x.startswith('down'):
+    elif x[0:-2] == 'down':
         depth += int(x[-1])
-    elif x.startswith('up'):
+    elif x[0:-2] == 'up':
         depth -= int(x[-1])
 
 
