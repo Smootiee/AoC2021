@@ -24,4 +24,4 @@ result_two = horiz_pos * aim
 
 print("--- Part One:",result_one, " ---")
 print("--- Part Two:",result_two, " ---")
-print("Execution time: ", time.time() - start_time)
+print("Execution time: {:.2f}".format((time.time() - start_time)* 1000), "ms")
