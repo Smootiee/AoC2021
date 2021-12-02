@@ -9,7 +9,7 @@ for x in data:
     x = x.rstrip("\n")
     if x.startswith('forward'):
         horiz_pos = int(horiz_pos) + int(x[-1])
-    elif x.startswith('depth'):
+    elif x.startswith('down'):
         depth = int(depth) + int(x[-1])
     elif x.startswith('up'):
         depth = int(depth) - int(x[-1])
