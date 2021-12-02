@@ -11,16 +11,14 @@ aim = 0
 
 for x in data:
     if x.startswith('forward'):
-        horiz_pos = horiz_pos + int(x[-1])
-        aim = aim + (depth * int(x[-1]))
+        horiz_pos += int(x[-1])
+        aim += (depth * int(x[-1]))
     elif x.startswith('down'):
-        depth = depth + int(x[-1])
+        depth += int(x[-1])
     elif x.startswith('up'):
-        depth = depth - int(x[-1])
+        depth -= int(x[-1])
 
-result_one = horiz_pos * depth
-result_two = horiz_pos * aim
 
-print("--- Part One:",result_one, " ---")
-print("--- Part Two:",result_two, " ---")
+print("--- Part One:",horiz_pos * depth, " ---")
+print("--- Part Two:",horiz_pos * aim, " ---")
 print("Execution time: {:.2f}".format((time.time() - start_time)* 1000), "ms")
