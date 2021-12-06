@@ -1,7 +1,7 @@
 import time
 start_time = time.time()
 
-with open("files/day3.txt") as file:
+with open("../files/day3.txt") as file:
     data = [str(line).rstrip() for line in file]
 
 list_data = list(data)
