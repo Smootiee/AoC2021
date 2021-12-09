@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import time
 from classes.bingo import Bingo
 start_time = time.time()
